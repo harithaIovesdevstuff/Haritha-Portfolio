@@ -139,6 +139,7 @@
     .custom-cursor-ring.hover {
       width: 38px;
       height: 38px;
+
       border-color: rgba(139, 111, 157, 0.7);
     }
 
@@ -149,6 +150,7 @@
 
     body::before {
       content: "";
+
       position: fixed;
 
       width: 420px;
@@ -170,6 +172,7 @@
 
     body::after {
       content: "";
+
       position: fixed;
 
       width: 380px;
@@ -209,6 +212,7 @@
       padding: 0 7%;
 
       background: rgba(252, 250, 247, 0.82);
+
       backdrop-filter: blur(14px);
       -webkit-backdrop-filter: blur(14px);
 
@@ -219,8 +223,10 @@
 
     .logo {
       font-family: "Playfair Display", serif;
+
       font-size: 1.25rem;
       font-weight: 700;
+
       color: #4c4052;
     }
 
@@ -305,6 +311,7 @@
       max-width: 680px;
 
       color: #6d6870;
+
       font-size: 1rem;
     }
 
@@ -334,6 +341,7 @@
       margin-bottom: 18px;
 
       font-family: "Patrick Hand", cursive;
+
       font-size: 1.35rem;
 
       color: #8b6f9d;
@@ -343,6 +351,7 @@
       font-family: "Playfair Display", serif;
 
       font-size: clamp(3.3rem, 7vw, 6.5rem);
+
       line-height: 0.98;
 
       letter-spacing: -0.045em;
@@ -379,6 +388,7 @@
       padding: 8px 14px;
 
       border: 1px solid rgba(139, 111, 157, 0.2);
+
       border-radius: 999px;
 
       background: rgba(255, 255, 255, 0.58);
@@ -474,6 +484,7 @@
         );
 
       border: 1px solid rgba(139, 111, 157, 0.16);
+
       border-radius: 28px;
 
       box-shadow:
@@ -530,6 +541,7 @@
 
     .hero-card p {
       color: #706a73;
+
       line-height: 1.75;
     }
 
@@ -558,6 +570,7 @@
       background: rgba(255, 255, 255, 0.58);
 
       border: 1px solid rgba(80, 70, 80, 0.08);
+
       border-radius: 20px;
 
       box-shadow:
@@ -576,119 +589,92 @@
 
     .about-card p {
       color: #6d6870;
+
       line-height: 1.8;
     }
 
 
-    ```html
-<!-- =====================================================
-     RESEARCH
-====================================================== -->
+    /* =========================================================
+       RESEARCH
+    ========================================================= */
 
-<section class="research" id="research">
+    .research {
+      padding-top: 90px;
+      padding-bottom: 110px;
+    }
 
-  <span class="section-label">
-    research
-  </span>
+    .research-card {
+      display: grid;
+      grid-template-columns: 1.25fr 0.75fr;
 
-  <h2 class="section-title">
-    Research that matters.
-  </h2>
+      gap: 50px;
 
-  <p class="section-description">
-    Exploring real-world problems through research, evidence
-    and curiosity.
-  </p>
+      margin-top: 45px;
 
+      padding: 42px;
 
-  <div class="research-card">
+      background:
+        linear-gradient(
+          135deg,
+          rgba(242, 236, 247, 0.72),
+          rgba(255, 255, 255, 0.64)
+        );
 
-    <div>
+      border: 1px solid rgba(139, 111, 157, 0.14);
 
-      <h3>
-        Refugee Employment &amp;
-        Qualification Recognition
-      </h3>
+      border-radius: 24px;
+    }
 
-      <p>
-        Through STARS, I researched how recognition of refugees'
-        previous qualifications can affect their employment
-        opportunities in host countries.
-      </p>
+    .research-card h3 {
+      font-family: "Playfair Display", serif;
 
-      <br>
+      font-size: 1.8rem;
 
-      <p>
-        My research looked at qualification recognition, access
-        to suitable employment, language barriers, discrimination
-        and unfamiliar employment systems.
-      </p>
+      color: #453b4b;
 
-      <!-- STARS LINK -->
-      <a
-        href="https://www.starsorganization.net/"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="research-link"
-      >
-        Check out STARS →
-      </a>
+      margin-bottom: 15px;
+    }
 
-    </div>
+    .research-card p {
+      color: #6c6670;
 
+      line-height: 1.8;
+    }
 
-    <div class="research-meta">
+    .research-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
 
-      <div class="research-meta-item">
-        <strong>Organisation</strong>
-        <span>STARS</span>
-      </div>
+    .research-meta-item {
+      padding: 18px;
 
-      <div class="research-meta-item">
-        <strong>Focus</strong>
-        <span>Refugee employment outcomes</span>
-      </div>
+      background: rgba(255, 255, 255, 0.6);
 
-      <div class="research-meta-item">
-        <strong>Approach</strong>
-        <span>Research &amp; evidence analysis</span>
-      </div>
+      border-radius: 14px;
 
-    </div>
+      border: 1px solid rgba(80, 70, 80, 0.07);
+    }
 
-  </div>
+    .research-meta-item strong {
+      display: block;
 
-</section>
-```
+      margin-bottom: 4px;
 
-And add this to your CSS:
+      font-size: 0.78rem;
 
-```css
-/* =========================================================
-   RESEARCH LINK
-========================================================= */
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
 
-.research-link {
-  display: inline-block;
+      color: #8b6f9d;
+    }
 
-  margin-top: 22px;
+    .research-meta-item span {
+      color: #625d65;
 
-  font-size: 0.88rem;
-  font-weight: 600;
-
-  color: #8b6f9d;
-
-  transition:
-    color 0.25s ease,
-    transform 0.25s ease;
-}
-
-.research-link:hover {
-  color: #705581;
-  transform: translateX(3px);
-}
-```
-
+      font-size: 0.9rem;
+    }
 
 
     /* =========================================================
@@ -719,6 +705,7 @@ And add this to your CSS:
       background: rgba(255, 255, 255, 0.64);
 
       border: 1px solid rgba(80, 70, 80, 0.08);
+
       border-radius: 20px;
 
       overflow: hidden;
@@ -783,6 +770,7 @@ And add this to your CSS:
 
     .project-card p {
       color: #6d6870;
+
       line-height: 1.7;
     }
 
@@ -811,6 +799,7 @@ And add this to your CSS:
       background: rgba(255, 255, 255, 0.58);
 
       border: 1px solid rgba(80, 70, 80, 0.07);
+
       border-radius: 16px;
 
       text-align: center;
@@ -824,6 +813,7 @@ And add this to your CSS:
 
     .interest:hover {
       transform: translateY(-3px);
+
       background: rgba(255, 255, 255, 0.82);
     }
 
@@ -840,6 +830,27 @@ And add this to your CSS:
     .interest span {
       font-size: 0.9rem;
       font-weight: 600;
+    }
+
+    /* Volunteer link */
+    .interest-link {
+      display: block;
+
+      margin-top: 6px;
+
+      font-size: 0.75rem;
+      font-weight: 500;
+
+      color: #8b6f9d;
+
+      transition:
+        color 0.25s ease,
+        transform 0.25s ease;
+    }
+
+    .interest-link:hover {
+      color: #705581;
+      transform: translateX(2px);
     }
 
 
@@ -874,6 +885,7 @@ And add this to your CSS:
       background: rgba(255, 255, 255, 0.65);
 
       border: 1px solid rgba(80, 70, 80, 0.1);
+
       border-radius: 10px;
 
       color: #5d5662;
@@ -922,6 +934,7 @@ And add this to your CSS:
     ========================================================= */
 
     @media (max-width: 900px) {
+
       nav {
         padding: 0 5%;
       }
@@ -955,6 +968,7 @@ And add this to your CSS:
 
 
     @media (max-width: 650px) {
+
       nav {
         height: 68px;
       }
@@ -1024,6 +1038,7 @@ And add this to your CSS:
     ========================================================= */
 
     @media (hover: none), (pointer: coarse) {
+
       html,
       body,
       a,
@@ -1056,15 +1071,35 @@ And add this to your CSS:
   ======================================================== -->
 
   <nav>
-    <a href="#home" class="logo">Haritha V.</a>
+
+    <a href="#home" class="logo">
+      Haritha V.
+    </a>
 
     <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#research">Research</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#interests">Interests</a></li>
-      <li><a href="#contact">Contact</a></li>
+
+      <li>
+        <a href="#about">About</a>
+      </li>
+
+      <li>
+        <a href="#research">Research</a>
+      </li>
+
+      <li>
+        <a href="#projects">Projects</a>
+      </li>
+
+      <li>
+        <a href="#interests">Interests</a>
+      </li>
+
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
+
     </ul>
+
   </nav>
 
 
@@ -1093,13 +1128,27 @@ And add this to your CSS:
         </p>
 
         <div class="hero-tags">
-          <span class="tag">Artificial Intelligence</span>
-          <span class="tag">Cybersecurity</span>
-          <span class="tag">Research</span>
+
+          <span class="tag">
+            Artificial Intelligence
+          </span>
+
+          <span class="tag">
+            Cybersecurity
+          </span>
+
+          <span class="tag">
+            Research
+          </span>
+
         </div>
 
         <div class="hero-buttons">
-          <a href="#projects" class="button button-primary">
+
+          <a
+            href="#projects"
+            class="button button-primary"
+          >
             Explore my work →
           </a>
 
@@ -1111,6 +1160,7 @@ And add this to your CSS:
           >
             GitHub
           </a>
+
         </div>
 
       </div>
@@ -1165,7 +1215,9 @@ And add this to your CSS:
 
         <div class="about-card">
 
-          <h3>Who I am</h3>
+          <h3>
+            Who I am
+          </h3>
 
           <p>
             I'm a first-year CSE student specialising in Artificial
@@ -1180,7 +1232,9 @@ And add this to your CSS:
 
         <div class="about-card">
 
-          <h3>Beyond code</h3>
+          <h3>
+            Beyond code
+          </h3>
 
           <p>
             Alongside technology, I enjoy creative writing, poetry,
@@ -1245,18 +1299,41 @@ And add this to your CSS:
         <div class="research-meta">
 
           <div class="research-meta-item">
-            <strong>Organisation</strong>
-            <span>STARS</span>
+
+            <strong>
+              Organisation
+            </strong>
+
+            <span>
+              STARS
+            </span>
+
           </div>
 
-          <div class="research-meta-item">
-            <strong>Focus</strong>
-            <span>Refugee employment outcomes</span>
-          </div>
 
           <div class="research-meta-item">
-            <strong>Approach</strong>
-            <span>Research &amp; evidence analysis</span>
+
+            <strong>
+              Focus
+            </strong>
+
+            <span>
+              Refugee employment outcomes
+            </span>
+
+          </div>
+
+
+          <div class="research-meta-item">
+
+            <strong>
+              Approach
+            </strong>
+
+            <span>
+              Research &amp; evidence analysis
+            </span>
+
           </div>
 
         </div>
@@ -1385,33 +1462,104 @@ And add this to your CSS:
       <div class="interests-grid">
 
         <div class="interest">
-          <span class="interest-icon">✦</span>
-          <span>Artificial Intelligence</span>
+
+          <span class="interest-icon">
+            ✦
+          </span>
+
+          <span>
+            Artificial Intelligence
+          </span>
+
         </div>
 
-        <div class="interest">
-          <span class="interest-icon">⌁</span>
-          <span>Cybersecurity</span>
-        </div>
 
         <div class="interest">
-          <span class="interest-icon">✎</span>
-          <span>Research</span>
+
+          <span class="interest-icon">
+            ⌁
+          </span>
+
+          <span>
+            Cybersecurity
+          </span>
+
         </div>
 
-        <div class="interest">
-          <span class="interest-icon">♡</span>
-          <span>Poetry</span>
-        </div>
 
         <div class="interest">
-          <span class="interest-icon">♪</span>
-          <span>Dance</span>
+
+          <span class="interest-icon">
+            ✎
+          </span>
+
+          <span>
+            Research
+          </span>
+
         </div>
 
+
         <div class="interest">
-          <span class="interest-icon">⌂</span>
-          <span>Baking</span>
+
+          <span class="interest-icon">
+            ♡
+          </span>
+
+          <span>
+            Poetry
+          </span>
+
+        </div>
+
+
+        <div class="interest">
+
+          <span class="interest-icon">
+            ♪
+          </span>
+
+          <span>
+            Dance
+          </span>
+
+        </div>
+
+
+        <div class="interest">
+
+          <span class="interest-icon">
+            ⌂
+          </span>
+
+          <span>
+            Baking
+          </span>
+
+        </div>
+
+
+        <!-- VOLUNTEERING -->
+
+        <div class="interest">
+
+          <span class="interest-icon">
+            ♧
+          </span>
+
+          <span>
+            Volunteering
+          </span>
+
+          <a
+            href="https://www.starsorganization.net/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="interest-link"
+          >
+            Check out STARS →
+          </a>
+
         </div>
 
       </div>
@@ -1450,6 +1598,7 @@ And add this to your CSS:
           GitHub
         </a>
 
+
         <a
           href="https://www.linkedin.com/in/haritha-v-858202344/"
           target="_blank"
@@ -1458,6 +1607,7 @@ And add this to your CSS:
         >
           LinkedIn
         </a>
+
 
         <a
           href="https://allpoetry.com/Haritha_V"
@@ -1489,8 +1639,13 @@ And add this to your CSS:
   ======================================================== -->
 
   <script>
-    const cursor = document.querySelector(".custom-cursor");
-    const ring = document.querySelector(".custom-cursor-ring");
+
+    const cursor =
+      document.querySelector(".custom-cursor");
+
+    const ring =
+      document.querySelector(".custom-cursor-ring");
+
 
     let mouseX = 0;
     let mouseY = 0;
@@ -1499,43 +1654,89 @@ And add this to your CSS:
     let ringY = 0;
 
 
-    document.addEventListener("mousemove", (event) => {
-      mouseX = event.clientX;
-      mouseY = event.clientY;
+    document.addEventListener(
+      "mousemove",
+      (event) => {
 
-      cursor.style.left = `${mouseX}px`;
-      cursor.style.top = `${mouseY}px`;
-    });
+        mouseX = event.clientX;
+        mouseY = event.clientY;
+
+        cursor.style.left =
+          `${mouseX}px`;
+
+        cursor.style.top =
+          `${mouseY}px`;
+
+      }
+    );
 
 
     function animateRing() {
-      ringX += (mouseX - ringX) * 0.12;
-      ringY += (mouseY - ringY) * 0.12;
 
-      ring.style.left = `${ringX}px`;
-      ring.style.top = `${ringY}px`;
+      ringX +=
+        (mouseX - ringX) * 0.12;
 
-      requestAnimationFrame(animateRing);
+      ringY +=
+        (mouseY - ringY) * 0.12;
+
+
+      ring.style.left =
+        `${ringX}px`;
+
+      ring.style.top =
+        `${ringY}px`;
+
+
+      requestAnimationFrame(
+        animateRing
+      );
     }
+
 
     animateRing();
 
 
     document
-      .querySelectorAll("a, button, .button")
-      .forEach((element) => {
+      .querySelectorAll(
+        "a, button, .button"
+      )
+      .forEach(
+        (element) => {
 
-        element.addEventListener("mouseenter", () => {
-          cursor.classList.add("hover");
-          ring.classList.add("hover");
-        });
+          element.addEventListener(
+            "mouseenter",
+            () => {
 
-        element.addEventListener("mouseleave", () => {
-          cursor.classList.remove("hover");
-          ring.classList.remove("hover");
-        });
+              cursor.classList.add(
+                "hover"
+              );
 
-      });
+              ring.classList.add(
+                "hover"
+              );
+
+            }
+          );
+
+
+          element.addEventListener(
+            "mouseleave",
+            () => {
+
+              cursor.classList.remove(
+                "hover"
+              );
+
+              ring.classList.remove(
+                "hover"
+              );
+
+            }
+          );
+
+        }
+      );
+
   </script>
 
 </body>
