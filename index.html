@@ -29,9 +29,6 @@
 
     html {
       scroll-behavior: smooth;
-
-      /* Professional purple arrow cursor */
-      cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M4 2L19 15L12.5 15.8L16.5 21L13.5 23L9.5 16.8L5 21Z' fill='%238b6f9d' stroke='%235f496d' stroke-width='1.2' stroke-linejoin='round'/%3E%3C/svg%3E") 4 2, auto;
     }
 
     body {
@@ -40,15 +37,6 @@
       font-family: "DM Sans", sans-serif;
       line-height: 1.6;
       overflow-x: hidden;
-
-      /* Purple cursor */
-      cursor: inherit;
-    }
-
-    a,
-    button,
-    .button {
-      cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M4 2L19 15L12.5 15.8L16.5 21L13.5 23L9.5 16.8L5 21Z' fill='%239a7aaa' stroke='%235f496d' stroke-width='1.2' stroke-linejoin='round'/%3E%3C/svg%3E") 4 2, pointer;
     }
 
     a {
@@ -64,35 +52,24 @@
     body::before {
       content: "";
       position: fixed;
-
       width: 350px;
       height: 350px;
-
       background: #eee6f8;
-
       border-radius: 50%;
-
       top: -150px;
       right: -100px;
-
       z-index: -2;
     }
 
     body::after {
       content: "";
-
       position: fixed;
-
       width: 280px;
       height: 280px;
-
       background: #e6f0e8;
-
       border-radius: 50%;
-
       bottom: -120px;
       left: -100px;
-
       z-index: -2;
     }
 
@@ -112,21 +89,15 @@
 
     .section-label {
       font-family: "Patrick Hand", cursive;
-
       font-size: 20px;
-
       color: #8b6f9d;
-
       margin-bottom: 5px;
     }
 
     .section-title {
       font-family: "Playfair Display", serif;
-
       font-size: clamp(35px, 5vw, 52px);
-
       margin-bottom: 35px;
-
       color: #302d35;
     }
 
@@ -138,11 +109,9 @@
     nav {
       position: sticky;
       top: 0;
-
       z-index: 100;
 
       background: rgba(250, 247, 242, 0.88);
-
       backdrop-filter: blur(14px);
 
       border-bottom: 1px solid #e6dfd8;
@@ -152,7 +121,6 @@
       height: 72px;
 
       display: flex;
-
       align-items: center;
       justify-content: space-between;
     }
@@ -162,20 +130,16 @@
       height: 43px;
 
       display: flex;
-
       align-items: center;
       justify-content: center;
 
       border-radius: 50%;
 
       background: #e8dff2;
-
       border: 1px solid #d3c5df;
 
       font-family: "Playfair Display", serif;
-
       font-weight: 700;
-
       font-size: 17px;
 
       transform: rotate(-5deg);
@@ -189,11 +153,9 @@
 
     .nav-links {
       display: flex;
-
       gap: 28px;
 
       font-size: 14px;
-
       font-weight: 500;
     }
 
@@ -203,7 +165,6 @@
 
     .nav-links a::after {
       content: "";
-
       position: absolute;
 
       width: 0;
@@ -230,17 +191,14 @@
       min-height: 88vh;
 
       display: flex;
-
       align-items: center;
     }
 
     .hero-grid {
       display: grid;
-
       grid-template-columns: 1.25fr 0.75fr;
 
       gap: 70px;
-
       align-items: center;
     }
 
@@ -248,15 +206,12 @@
       display: inline-block;
 
       background: #f1e8f5;
-
       border: 1px solid #ddcde7;
 
       padding: 7px 14px;
-
       border-radius: 50px;
 
       font-size: 13px;
-
       color: #725d80;
 
       margin-bottom: 20px;
@@ -266,7 +221,6 @@
       font-family: "Playfair Display", serif;
 
       font-size: clamp(60px, 9vw, 105px);
-
       line-height: 0.95;
 
       letter-spacing: -5px;
@@ -282,7 +236,6 @@
       max-width: 620px;
 
       font-size: 18px;
-
       color: #6e6870;
 
       margin-bottom: 25px;
@@ -290,9 +243,7 @@
 
     .tags {
       display: flex;
-
       flex-wrap: wrap;
-
       gap: 9px;
 
       margin-bottom: 30px;
@@ -302,27 +253,22 @@
       padding: 7px 13px;
 
       background: #fff;
-
       border: 1px solid #e1d9d3;
 
       border-radius: 50px;
 
       font-size: 12px;
-
       font-weight: 600;
     }
 
     .hero-buttons {
       display: flex;
-
       gap: 12px;
-
       flex-wrap: wrap;
     }
 
     .button {
       display: inline-flex;
-
       align-items: center;
       justify-content: center;
 
@@ -335,7 +281,6 @@
       background: #fff;
 
       font-size: 13px;
-
       font-weight: 600;
 
       transition: 0.2s;
@@ -343,13 +288,11 @@
 
     .button:hover {
       transform: translateY(-3px);
-
       box-shadow: 4px 5px 0 #e2d8e8;
     }
 
     .button.primary {
       background: #dfd0eb;
-
       border-color: #cdb9dd;
     }
 
@@ -399,24 +342,18 @@
       border-radius: 50%;
 
       background:
-        radial-gradient(
-          circle at 30% 30%,
-          #f2e8f7,
-          transparent 45%
-        ),
+        radial-gradient(circle at 30% 30%, #f2e8f7, transparent 45%),
         #e4eee5;
 
       border: 2px solid #d5c9d8;
 
       display: flex;
-
       align-items: center;
       justify-content: center;
 
       font-family: "Playfair Display", serif;
 
       font-size: 58px;
-
       font-weight: 700;
 
       color: #685775;
@@ -430,35 +367,29 @@
 
     .hero-card-text h3 {
       font-family: "Playfair Display", serif;
-
       font-size: 23px;
     }
 
     .hero-card-text p {
       color: #827b82;
-
       font-size: 13px;
     }
 
     .star {
       position: absolute;
-
       font-size: 24px;
-
       color: #9a7aaa;
     }
 
     .star.one {
       top: 35px;
       right: 30px;
-
       transform: rotate(12deg);
     }
 
     .star.two {
       bottom: 35px;
       left: 25px;
-
       color: #8ca88f;
     }
 
@@ -469,9 +400,7 @@
 
     .about-grid {
       display: grid;
-
       grid-template-columns: 1fr 1fr;
-
       gap: 25px;
     }
 
@@ -489,17 +418,13 @@
 
     .paper.lavender {
       background: #f5eff9;
-
       border-color: #e4d9eb;
-
       box-shadow: 7px 8px 0 #e8dfef;
     }
 
     .paper.sage {
       background: #eef5ef;
-
       border-color: #dce8de;
-
       box-shadow: 7px 8px 0 #e1ebe3;
     }
 
@@ -521,15 +446,12 @@
 
     .paper h3 {
       font-family: "Playfair Display", serif;
-
       font-size: 24px;
-
       margin-bottom: 13px;
     }
 
     .paper p {
       color: #68626a;
-
       font-size: 15px;
     }
 
@@ -540,7 +462,6 @@
 
     .research-card {
       display: grid;
-
       grid-template-columns: 90px 1fr;
 
       gap: 25px;
@@ -567,24 +488,20 @@
       height: 65px;
 
       display: flex;
-
       align-items: center;
       justify-content: center;
 
       border-radius: 50%;
 
       background: #eee4f5;
-
       border: 1px solid #dacbe3;
 
       font-family: "Playfair Display", serif;
-
       font-size: 22px;
     }
 
     .research-card h3 {
       font-family: "Playfair Display", serif;
-
       font-size: 23px;
 
       margin-bottom: 8px;
@@ -592,7 +509,6 @@
 
     .research-card p {
       color: #6e6870;
-
       font-size: 15px;
     }
 
@@ -604,13 +520,11 @@
       padding: 5px 10px;
 
       background: #edf4ee;
-
       border: 1px solid #d6e4d8;
 
       border-radius: 50px;
 
       font-size: 11px;
-
       font-weight: 600;
 
       color: #607765;
@@ -645,7 +559,6 @@
 
     .project:hover {
       transform: translateY(-6px);
-
       box-shadow: 7px 8px 0 #e6dce9;
     }
 
@@ -654,7 +567,6 @@
       height: 45px;
 
       display: flex;
-
       align-items: center;
       justify-content: center;
 
@@ -671,13 +583,11 @@
       font-family: "Playfair Display", serif;
 
       font-size: 23px;
-
       margin-bottom: 9px;
     }
 
     .project p {
       color: #706a71;
-
       font-size: 14px;
     }
 
@@ -694,7 +604,6 @@
       border-radius: 50px;
 
       background: #edf4ee;
-
       color: #5e7562;
 
       border: 1px solid #d8e5da;
@@ -717,7 +626,6 @@
       min-height: 125px;
 
       display: flex;
-
       flex-direction: column;
 
       align-items: center;
@@ -740,19 +648,16 @@
 
     .interest-icon {
       font-size: 25px;
-
       margin-bottom: 5px;
     }
 
     .interest span {
       font-family: "Playfair Display", serif;
-
       font-size: 18px;
     }
 
     .poetry-card {
       background: #f5eff9;
-
       border-color: #e2d5e9;
     }
 
@@ -760,11 +665,9 @@
       margin-top: 5px;
 
       font-size: 11px;
-
       font-weight: 600;
 
       text-decoration: underline;
-
       text-underline-offset: 3px;
 
       color: #725d80;
@@ -774,13 +677,8 @@
       opacity: 0.65;
     }
 
-    /* =========================
-       VOLUNTEERING CARD
-    ========================= */
-
     .volunteer-card {
       background: #eef5ef;
-
       border-color: #dce8de;
     }
 
@@ -788,11 +686,9 @@
       margin-top: 5px;
 
       font-size: 11px;
-
       font-weight: 600;
 
       text-decoration: underline;
-
       text-underline-offset: 3px;
 
       color: #607765;
@@ -899,13 +795,11 @@
 
       .hero-grid {
         grid-template-columns: 1fr;
-
         gap: 55px;
       }
 
       .hero-card {
         max-width: 400px;
-
         margin: auto;
       }
 
@@ -928,6 +822,7 @@
       section {
         padding: 75px 0;
       }
+
     }
 
 
@@ -949,13 +844,11 @@
 
 <body>
 
-
   <!-- =========================
        NAVIGATION
   ========================= -->
 
   <nav>
-
     <div class="container nav-inner">
 
       <a href="#home" class="logo">
@@ -963,21 +856,14 @@
       </a>
 
       <div class="nav-links">
-
         <a href="#about">About</a>
-
         <a href="#research">Research</a>
-
         <a href="#projects">Projects</a>
-
         <a href="#interests">Interests</a>
-
         <a href="#contact">Contact</a>
-
       </div>
 
     </div>
-
   </nav>
 
 
@@ -1005,23 +891,11 @@
           cybersecurity, research and creative work.
         </p>
 
-
         <div class="tags">
-
-          <span class="tag">
-            Artificial Intelligence
-          </span>
-
-          <span class="tag">
-            Cybersecurity
-          </span>
-
-          <span class="tag">
-            Research
-          </span>
-
+          <span class="tag">Artificial Intelligence</span>
+          <span class="tag">Cybersecurity</span>
+          <span class="tag">Research</span>
         </div>
-
 
         <div class="hero-buttons">
 
@@ -1049,13 +923,8 @@
 
         <div class="tape"></div>
 
-        <div class="star one">
-          ✦
-        </div>
-
-        <div class="star two">
-          ✦
-        </div>
+        <div class="star one">✦</div>
+        <div class="star two">✦</div>
 
         <div class="profile-circle">
           HV
@@ -1068,7 +937,7 @@
           </h3>
 
           <p>
-            building, researching &amp; learning
+            building, researching & learning
           </p>
 
         </div>
@@ -1162,7 +1031,7 @@
         <div>
 
           <h3>
-            Refugee Employment &amp; Qualification Recognition
+            Refugee Employment & Qualification Recognition
           </h3>
 
           <p>
@@ -1266,7 +1135,7 @@
           </div>
 
           <h3>
-            AIML &amp; Coding
+            AIML & Coding
           </h3>
 
           <p>
@@ -1389,8 +1258,6 @@
         </div>
 
 
-        <!-- POETRY -->
-
         <div class="interest poetry-card">
 
           <div class="interest-icon">
@@ -1406,7 +1273,7 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            check out my poems →
+            Haritha V, Poet at AllPoetry →
           </a>
 
         </div>
@@ -1437,8 +1304,6 @@
 
         </div>
 
-
-        <!-- VOLUNTEERING / STARS -->
 
         <div class="interest volunteer-card">
 
@@ -1504,7 +1369,6 @@
 
         <div class="contact-links">
 
-
           <a
             href="https://github.com/harithaiovesdevstuff"
             target="_blank"
@@ -1534,7 +1398,6 @@
             My Poetry ↗
           </a>
 
-
         </div>
 
       </div>
@@ -1551,11 +1414,7 @@
   <footer>
 
     <div class="container">
-
-      made with curiosity
-      <span>✦</span>
-      by Haritha V
-
+      made with curiosity <span>✦</span> by Haritha V
     </div>
 
   </footer>
